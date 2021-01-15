@@ -1,0 +1,235 @@
+// header styles //
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://www.rockandpop.cl/wp-content/uploads/2020/04/marvel_comics_gratuitos_cuarentena.jpg_554688468.jpg);
+  background-size: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgb(202, 4, 4);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .logo-conteiner {
+    width: 300px;
+    height: 100px;
+    .logo-img {
+      width: 300px;
+      height: 100px;
+    }
+  }
+  .title-conteiner {
+    width: 500px;
+    height: 100px;
+    line-height: 2;
+    margin-right: 36px;
+    .title {
+      font-size: 41px;
+      color: white;
+      font-family: "Permanent Marker", cursive;
+    }
+  }
+}
+
+.search-section {
+  width: 100%;
+  height: auto;
+  .search-img-conteiner {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: 13px;
+    .search-img {
+      width: 600px;
+      height: 300px;
+      border-radius: 10px;
+    }
+  }
+  .form {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    .input-search {
+      width: 600px;
+      height: 50px;
+      border-radius: 5px;
+      padding-left: 20px;
+      font-size: 19px;
+    }
+    .btn-search {
+      width: 45px;
+      height: 40px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin: auto;
+      margin-left: -56px;
+      background: rgb(24, 24, 88);
+      #icon-search {
+        font-size: 20px;
+        margin: 10px 12px;
+        color: white;
+      }
+    }
+  }
+}
+
+.image-section {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .div-img-ctn {
+    width: 28%;
+    height: 37rem;
+    margin-top: 40px;
+    margin-left: 36%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: rgb(2, 6, 70);
+    border-radius: 10px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    &:hover {
+      transform-style: preserve-3d;
+      transform: scale(1.02);
+      transition: all ease 0.3s;
+      background: #17171d;
+    }
+    .div-img {
+      width: 500px;
+      height: 500px;
+      margin: 30px;
+      .img-hero {
+        width: 500px;
+        height: 500px;
+        cursor: pointer;
+      }
+    }
+  }
+  .name-hero {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 21px;
+    color: white;
+    margin: auto;
+  }
+
+  .arrow-left-ctn {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 30%;
+    background: red;
+    border-radius: 50%;
+    border: 3px black solid;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform-style: preserve-3d;
+      transform: scale(1.5);
+      transition: all ease 0.3s;
+    }
+    #arrow-left {
+      color: white;
+      font-size: 50px;
+      line-height: 1.4;
+      margin-left: 12px;
+    }
+  }
+  .arrow-right-ctn {
+    width: 70px;
+    height: 70px;
+    margin-top: 15%;
+    margin-right: 30%;
+    background: red;
+    border-radius: 50%;
+    border: 3px black solid;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform-style: preserve-3d;
+      transform: scale(1.5);
+      transition: all ease 0.3s;
+    }
+    #arrow-right {
+      color: white;
+      font-size: 50px;
+      line-height: 1.4;
+      margin-left: 12px;
+    }
+  }
+  .pop-up-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // display: none;
+    .pop-up-ctn {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      height: 740px;
+      background: white;
+      margin: 6% auto;
+      padding: 20px;
+      position: relative;
+      border-radius: 20px;
+      .pop-up-close-ctn {
+        width: 20px;
+        height: 20px;
+        float: right;
+        #pop-up-close {
+          font-size: 25px;
+        }
+      }
+    }
+    .image-pop-up {
+        width: 600px;
+        height: 623px;
+    }
+    .name-pop-up {
+        font-weight: bold;
+        font-size: 20px;
+    }
+  }
+}
+
+.section-img-search {
+  width: 20%;
+  height: auto;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background: white;
+  border-radius: 10px;
+  .name-hero {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 21px;
+    color: black;
+  }
+  #icon-close {
+    position: relative;
+    top: -258px;
+    left: 318px;
+    cursor: pointer;
+  }
+}

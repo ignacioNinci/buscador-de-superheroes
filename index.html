@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buscador de superheroes de Marvel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-conteiner">
+        <img
+          class="logo-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/04/MarvelLogo.svg"
+          alt=""
+        />
+      </div>
+      <div class="title-conteiner">
+        <h1 class="title">Buscador de superheroes</h1>
+      </div>
+    </header>
+    <main id="main">
+      <section class="search-section">
+        <div class="search-img-conteiner">
+          <img
+            class="search-img"
+            src="https://jaumeperisblanes.files.wordpress.com/2012/10/marvel-universe.jpg"
+            alt=""
+          />
+        </div>
+        <form action="" class="form" id="form">
+          <input
+            id="input-search"
+            class="input-search"
+            type="search"
+            placeholder="Busca tu superheroe favorito"
+          />
+          <div class="btn-search" id="btn-search">
+            <i id="icon-search" class="fas fa-search"></i>
+          </div>
+        </form>
+      </section>
+      <section class="image-section" id="image-section">
+        <div id="div-img-ctn" class="div-img-ctn"></div>
+
+        <div class="arrow-left-ctn" id="arrow-left-ctn">
+          <i class="fas fa-arrow-left" id="arrow-left"></i>
+        </div>
+        <div class="arrow-right-ctn" id="arrow-right-ctn">
+          <i class="fas fa-arrow-right" id="arrow-right"></i>
+        </div>
+      </section>
+    </main>
+    <script src="/md5.js"></script>
+    <script src="/funcionamiento.js"></script>
+  </body>
+</html>
